@@ -44,7 +44,7 @@
       bookmarkBtn.addEventListener("click", addNewBookmarkEventHandler);
     }
   };
-
+  newVideoLoaded();
   chrome.runtime.onMessage.addListener((obj, sender, response) => {
     const { type, value, videoId } = obj;
 
@@ -61,7 +61,7 @@
     }
   });
 
-  newVideoLoaded();
+ 
 })();
 
 const getTime = t => {
